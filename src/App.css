@@ -1,0 +1,14 @@
+.nav {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	background-color: #ffab40ff;
+	color: #0097a7;
+	font-family: 'Lobster', cursive;
+}
+.links {
+  margin: auto;
+
+}
+h1{
+  padding-left:20px;
+}
