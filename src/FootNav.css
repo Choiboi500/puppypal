@@ -1,0 +1,9 @@
+.footNavLinks{
+    display:grid;
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    width:50%;
+    margin:70px auto auto auto;
+    
+}
