@@ -4,6 +4,7 @@
 	grid-template-rows: 5;
 	text-align: center;
 	margin: auto;
+	
 }
 
 img {
@@ -15,4 +16,12 @@ input {
 
 .quote {
 	font-family: 'Ranchers', cursive;
+}
+
+
+
+.newImg{
+	margin: 20px 0 0 0;
+	border-width: thin;
+	max-width: 500px;
 }

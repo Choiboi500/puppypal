@@ -17,10 +17,12 @@ class Search extends Component {
 					value={this.props.breed}
 					onChange={this.props.onChange}
 				/>
-				<br />
-				<br />
+				
 
-				<input className='btn' type='submit' value='Search'></input>
+				<input 
+					className='submit' 
+					type='submit' 
+					value='Search'/>
 			</form>
 		);
 	}

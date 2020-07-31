@@ -12,7 +12,6 @@ class App extends Component {
     return (
       <div>
         <Nav/>
-      
       <FootNav/>
       </div>
      

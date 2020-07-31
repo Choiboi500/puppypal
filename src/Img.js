@@ -1,11 +1,22 @@
 import React, { Component } from 'react';
-import Search from './Search';
 
 class Img extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			
+		};
+	}
 	render() {
+		console.log(this.state);
+		
 		return (
 			<div>
-				<img src={this.props.currentImg} />
+				
+				<img className='newImg' src={this.props.currentImg} />
+				
+				
+				
 			</div>
 		);
 	}
