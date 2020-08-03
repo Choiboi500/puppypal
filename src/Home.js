@@ -63,11 +63,7 @@ class Home extends Component {
 				)}
 				{this.state.currentImg !==
 					'Breed not found (master breed does not exist)' && (
-					<Img
-						className='currentImg'
-						currentImg={this.state.currentImg}
-						
-					/>
+					<Img className='currentImg' currentImg={this.state.currentImg} />
 				)}
 
 				{!this.state.homeDog && (
