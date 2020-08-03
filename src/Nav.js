@@ -11,7 +11,14 @@ class Nav extends Component {
 				<div className='navContent'>
 					<h1>PuppyPal</h1>
 					<div className='navLinks'>
-						<Link to='/'>Home</Link> <Link to='/about'>About</Link>
+						<Link to='/' style={{ textDecoration: 'none', color: '#0097a7' }}>
+							Home
+						</Link>{' '}
+						<Link
+							to='/about'
+							style={{ textDecoration: 'none', color: '#0097a7' }}>
+							About
+						</Link>
 					</div>
 				</div>
 

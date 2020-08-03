@@ -35,8 +35,6 @@ class Home extends Component {
 	};
 
 	onNext = () => {
-		
-		
 		let url = `https://dog.ceo/api/breed/${this.state.breedName}/images/random`;
 		fetch(url)
 			.then((res) => res.json())
@@ -44,9 +42,8 @@ class Home extends Component {
 				console.log(res);
 				this.setState({ currentImg: res.message });
 			});
-		
-
 	};
+
 	onSubmit = (e) => {
 		e.preventDefault();
 		this.setState({ breed: this.state.value, homeDog: false });
@@ -64,8 +61,10 @@ class Home extends Component {
 						src='https://user-images.githubusercontent.com/65630204/88955962-abdd6100-d26a-11ea-870f-017806c4fc08.jpg'
 					/>
 				)}
-
-				<Img className='currentImg' currentImg={this.state.currentImg} />
+				{!this.state.currentImg ===
+					'Breed not found (master breed does not exist)' && (
+					<Img className='currentImg' currentImg={this.state.currentImg} />
+				)}
 
 				{!this.state.homeDog && (
 					<input
@@ -76,8 +75,15 @@ class Home extends Component {
 					/>
 				)}
 
-				{!this.state.homeDog && 
-					<h2>"{this.state.breedName.toLowerCase()}"</h2>}
+				{!this.state.homeDog && <h2>"{this.state.breedName.toLowerCase()}"</h2>}
+
+				{this.state.currentImg ===
+					'Breed not found (master breed does not exist)' && (
+					<h2>
+						Sorry, your search for "{this.state.breedName}" found "0" results.
+						Please try again.
+					</h2>
+				)}
 
 				<Search
 					onChange={this.onChange}

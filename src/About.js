@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './About.css';
-import FootNav from './FootNav';
 
 class About extends Component {
 	render() {

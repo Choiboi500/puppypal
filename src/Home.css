@@ -9,6 +9,8 @@
 
 img {
 	margin: auto;
+		border-width: thin;
+
 }
 input {
 	margin: auto;
@@ -18,10 +20,9 @@ input {
 	font-family: 'Ranchers', cursive;
 }
 
-
+.currentImg{}
 
 .newImg{
 	margin: 20px 0 0 0;
-	border-width: thin;
 	max-width: 500px;
 }
