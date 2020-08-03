@@ -4,13 +4,11 @@
 	grid-template-rows: 5;
 	text-align: center;
 	margin: auto;
-	
 }
 
 img {
 	margin: auto;
-		border-width: thin;
-
+	border-width: thin;
 }
 input {
 	margin: auto;
@@ -20,9 +18,12 @@ input {
 	font-family: 'Ranchers', cursive;
 }
 
-.currentImg{}
+.currentImg {
+	border-color: black;
+	border-width: 10px;
+}
 
-.newImg{
+.newImg {
 	margin: 20px 0 0 0;
 	max-width: 500px;
 }

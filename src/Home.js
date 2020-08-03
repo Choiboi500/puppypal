@@ -61,9 +61,13 @@ class Home extends Component {
 						src='https://user-images.githubusercontent.com/65630204/88955962-abdd6100-d26a-11ea-870f-017806c4fc08.jpg'
 					/>
 				)}
-				{!this.state.currentImg ===
+				{this.state.currentImg !==
 					'Breed not found (master breed does not exist)' && (
-					<Img className='currentImg' currentImg={this.state.currentImg} />
+					<Img
+						className='currentImg'
+						currentImg={this.state.currentImg}
+						
+					/>
 				)}
 
 				{!this.state.homeDog && (
@@ -79,7 +83,7 @@ class Home extends Component {
 
 				{this.state.currentImg ===
 					'Breed not found (master breed does not exist)' && (
-					<h2>
+					<h2 style={{ marginTop: '100px' }}>
 						Sorry, your search for "{this.state.breedName}" found "0" results.
 						Please try again.
 					</h2>

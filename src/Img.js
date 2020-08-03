@@ -12,7 +12,7 @@ class Img extends Component {
 		console.log(this.state);
 		
 		return (
-			<div>
+			<div className='container'>
 				
 				<img className='newImg' src={this.props.currentImg} />
 				

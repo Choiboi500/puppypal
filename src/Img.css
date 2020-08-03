@@ -1,3 +1,4 @@
-.currentImg{
-    border: black;
+.container{
+    border-width:thick;
 }
+.newImg{border-width: thick;}
