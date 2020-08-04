@@ -6,10 +6,21 @@ PuppyPal is a safe place to find pictures of puppies and dogs of all breeds! Thi
 
 ### `Technologies Used`
 
-HTML/CSS/JS/React
+- HTML
+- CSS
+- JavaScript
+- React
 
-### `Getting Started/Installation Instructions:`
+### `Getting Started`
 
 1. Enter a breed name into the search field and click search.
 2. Click next to see a new picture of a dog of the same breed.
 3. Enter a new breed name into the search field and click search so that you can see a new random picture.
+
+## Installation Instructions
+To set up the app locally on your own system:
+1. Fork and clone the [project repository](https://choiboi500.github.io/puppypal/)
+2. Install all dependencies locally  
+    
+## Contribute
+- Source code: https://choiboi500.github.io/puppypal/
